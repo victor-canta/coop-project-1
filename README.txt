@@ -1,0 +1,1 @@
+Here you can find the SQL code used to create some of the visualizations found in the Tableau dashboard in my portfolio website. The project was completed collaboratively, and I am only showcasing the work I authored.
