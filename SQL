@@ -1,0 +1,10 @@
+--Getting the cases involving combined drug overdoses, accounting for different forms of wording
+SELECT COUNT(Cause_of_Death)
+FROM `eastern-camp-396602.overdose.overdose`
+WHERE Cause_of_Death LIKE '%and%' OR Cause_of_Death LIKE '%,%' OR Cause_of_Death LIKE'%Multiple%'
+
+
+--Getting the cases involving fentanyl, accounting for different forms of wording
+SELECT COUNT(Cause_of_Death)
+FROM `eastern-camp-396602.overdose.overdose`
+WHERE Cause_of_Death LIKE '%Fentanyl%' OR Cause_of_Death LIKE '%fent%' OR Cause_of_Death LIKE'%Fent%'
